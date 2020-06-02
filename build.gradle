@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'com.rays'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    jcenter()
+    maven {
+        url "http://repo.maven.apache.org/maven2"
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'io.appium', name: 'java-client', version: '7.3.0'
+    implementation group: 'io.appium', name: 'java-client', version: '7.3.0'
+//    implementation 'com.github.appium:java-client:7.3.0'
+}
